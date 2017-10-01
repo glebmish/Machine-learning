@@ -1,28 +1,6 @@
+from kNN.KDTree.Division import Division
+from kNN.KDTree.KDNode import KDNode
 from kNN.reader import *
-
-
-class KDDivision:
-
-    x = "X"
-    y = "Y"
-
-    @staticmethod
-    def switch_division(div):
-        if div == KDDivision.x:
-            return KDDivision.y
-        else:
-            return KDDivision.x
-
-
-class KDNode:
-
-    # if a node, then point is None. Otherwise, if a leaf, all but not point are None
-    def __init__(self, point, median, div, left, right):
-        self.point = point
-        self.median = median
-        self.div = div
-        self.left = left
-        self.right = right
 
 
 class KDTree:
@@ -36,16 +14,16 @@ class KDTree:
         if len(p) == 1:
             return KDNode(p[0], None, None, None, None)
         elif depth / 2 == 0:
-            division = "X"
+            division = Division.x
         else:
-            division = "Y"
+            division = Division.y
 
         p1, p2, median = KDTree.divide(p, division)
 
         if len(p1) == 0:
-            p1, p2, tmp = KDTree.divide(p2, KDDivision.switch_division(division))
+            p1, p2, tmp = KDTree.divide(p2, Division.switch_division(division))
         elif len(p2) == 0:
-            p1, p2, tmp = KDTree.divide(p1, KDDivision.switch_division(division))
+            p1, p2, tmp = KDTree.divide(p1, Division.switch_division(division))
 
         return KDNode(
             None,
@@ -58,7 +36,7 @@ class KDTree:
     # divides list of points into two lists by median, found by method
     @staticmethod
     def divide(p, div):
-        if div == "X":
+        if div == Division.x:
             median = 0
             for point in p:
                 median += point.x

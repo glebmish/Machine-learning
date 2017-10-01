@@ -1,6 +1,8 @@
 from kNN.Point import Point
+import os
 
-TRAINING_SET_FILE = './chips.txt'
+root = os.path.abspath(os.path.dirname(__file__))
+TRAINING_SET_FILE = os.path.join(root, 'chips.txt')
 
 
 def read_training_set():
