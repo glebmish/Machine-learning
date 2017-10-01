@@ -1,6 +1,7 @@
 import math
 
-class KNNClassifier:
+
+class KNNClassifier(object):
 
     def __init__(self, k):
         self.__k = k
