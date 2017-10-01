@@ -1,4 +1,4 @@
-from kNN.Object import Object
+from kNN.Point import Point
 
 TRAINING_SET_FILE = './chips.txt'
 
@@ -13,6 +13,6 @@ def read_training_set():
             y = float(y)
             cls = int(cls)
 
-            objects.append(Object(x, y, cls))
+            objects.append(Point(x, y, cls))
 
     return objects

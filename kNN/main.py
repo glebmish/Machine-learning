@@ -1,5 +1,6 @@
 
 from kNN.reader import *
+from kNN.Point import Point
 from kNN.KNNClassifier import KNNClassifier
 
 if __name__ == '__main__':
@@ -15,7 +16,7 @@ if __name__ == '__main__':
         except ValueError as e:
             continue
 
-        point = Object(x, y)
+        point = Point(x, y)
         point.cls = classifier.classify(point)
         print(point)
         print()
