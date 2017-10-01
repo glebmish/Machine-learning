@@ -42,8 +42,8 @@ def validation_90_10():
     classifier = KNNClassifier(k)
     classifier.train(train_set)
 
-    correct_percentage = Validator.correct_percentage(classifier, test_set)
-    print("{0}NN classifier correctly classified {1:.2f}% of test set".format(k, correct_percentage * 100))
+    metric = Validator.f1_measure(classifier, test_set)
+    print("f1-measure={:.4f} for {}NN classifier".format(metric, k))
 
 def visualization_90_10():
     objects = read_training_set()
@@ -54,18 +54,18 @@ def visualization_90_10():
     train_set = objects[:train_set_len]
     test_set = objects[train_set_len:]
 
-    k = 1
+    k = 3
     classifier = KNNClassifier(k)
     classifier.train(train_set)
 
     for point in train_set:
-        point.cls = classifier.classify(point)
+        point = classifier.classify(point)
 
     visualizer = Visualizer()
     visualizer.visualize(train_set, test_set)
 
 if __name__ == '__main__':
-    type = 3
+    type = 2
 
     if type == 1:
         guessing_game()
