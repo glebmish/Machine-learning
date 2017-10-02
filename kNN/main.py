@@ -5,20 +5,15 @@ from kNN.Point import Point
 from kNN.KNNClassifier import KNNClassifier
 from kNN.Validator import Validator
 from kNN.Visualizer import Visualizer
-from kNN.KDTree.KNNKDClassifier import KNNKDClassifier
 
 
-def guessing_game(method):
+def guessing_game():
     print('Guessing game')
 
     objects = read_training_set()
 
-    if method == 1:
-        print("Using list")
-        classifier = KNNClassifier(1)
-    else:
-        print("Using KDTree")
-        classifier = KNNKDClassifier(1)
+    k = 1
+    classifier = KNNClassifier(k)
 
     classifier.train(objects)
 
@@ -36,7 +31,7 @@ def guessing_game(method):
         print()
 
 
-def validation_90_10(method):
+def validation_90_10():
     objects = read_training_set()
     shuffle(objects)
 
@@ -46,12 +41,7 @@ def validation_90_10(method):
     test_set = objects[train_set_len:]
 
     k = 1
-    if method == 1:
-        print("Using list")
-        classifier = KNNClassifier(1)
-    else:
-        print("Using KDTree")
-        classifier = KNNKDClassifier(1)
+    classifier = KNNClassifier(k)
 
     classifier.train(train_set)
 
@@ -59,7 +49,7 @@ def validation_90_10(method):
     print("f1-measure={:.4f} for {}NN classifier".format(metric, k))
 
 
-def visualization_90_10(method):
+def visualization_90_10():
     objects = read_training_set()
     shuffle(objects)
 
@@ -69,31 +59,25 @@ def visualization_90_10(method):
     test_set = objects[train_set_len:]
 
     k = 3
-    if method == 1:
-        print("Using list")
-        classifier = KNNClassifier(1)
-    else:
-        print("Using KDTree")
-        classifier = KNNKDClassifier(1)
+    classifier = KNNClassifier(k)
 
     classifier.train(train_set)
 
     for point in train_set:
-        point = classifier.classify(point)
+        point.cls = classifier.classify(point)
 
     visualizer = Visualizer()
     visualizer.visualize(train_set, test_set)
 
 
 if __name__ == '__main__':
-    type = 2
-    method = 2
+    type = 3
 
     if type == 1:
-        guessing_game(method)
+        guessing_game()
     elif type == 2:
-        validation_90_10(method)
+        validation_90_10()
     elif type == 3:
-        visualization_90_10(method)
+        visualization_90_10()
     else:
         print('Wrong mode')
