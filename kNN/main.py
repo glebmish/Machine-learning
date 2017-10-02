@@ -12,7 +12,9 @@ def guessing_game():
 
     objects = read_training_set()
 
-    classifier = KNNClassifier(1)
+    k = 1
+    classifier = KNNClassifier(k)
+
     classifier.train(objects)
 
     while True:
@@ -40,10 +42,12 @@ def validation_90_10():
 
     k = 1
     classifier = KNNClassifier(k)
+
     classifier.train(train_set)
 
     metric = Validator.f1_measure(classifier, test_set)
     print("f1-measure={:.4f} for {}NN classifier".format(metric, k))
+
 
 def visualization_90_10():
     objects = read_training_set()
@@ -56,16 +60,18 @@ def visualization_90_10():
 
     k = 3
     classifier = KNNClassifier(k, class_resolver=resolve_class_kernel_function)
+
     classifier.train(train_set)
 
-    for point in train_set:
+    for point in test_set:
         point.cls = classifier.classify(point)
 
     visualizer = Visualizer()
     visualizer.visualize(train_set, test_set)
 
+
 if __name__ == '__main__':
-    type = 2
+    type = 3
 
     if type == 1:
         guessing_game()
