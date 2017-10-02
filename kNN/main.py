@@ -23,8 +23,7 @@ if __name__ == '__main__':
     metric = Validator.f1_measure(classifier, test_set)
     print("f1-measure={:.4f} for {}NN classifier".format(metric, k))
 
-    for point in test_set:
-        point.cls = classifier.classify(point)
+    classified_set = [Point(point.x, point.y, classifier.classify(point)) for point in test_set]
 
     visualizer = Visualizer()
-    visualizer.visualize(train_set, test_set)
+    visualizer.visualize(train_set, test_set, classified_set)
