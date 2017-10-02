@@ -5,14 +5,21 @@ from kNN.Point import Point
 from kNN.KNNClassifier import KNNClassifier
 from kNN.Validator import Validator
 from kNN.Visualizer import Visualizer
+from kNN.KDTree.KNNKDClassifier import KNNKDClassifier
 
 
-def guessing_game():
+def guessing_game(method):
     print('Guessing game')
 
     objects = read_training_set()
 
-    classifier = KNNClassifier(1)
+    if method == 1:
+        print("Using list")
+        classifier = KNNClassifier(1)
+    else:
+        print("Using KDTree")
+        classifier = KNNKDClassifier(1)
+
     classifier.train(objects)
 
     while True:
@@ -29,7 +36,7 @@ def guessing_game():
         print()
 
 
-def validation_90_10():
+def validation_90_10(method):
     objects = read_training_set()
     shuffle(objects)
 
@@ -39,13 +46,20 @@ def validation_90_10():
     test_set = objects[train_set_len:]
 
     k = 1
-    classifier = KNNClassifier(k)
+    if method == 1:
+        print("Using list")
+        classifier = KNNClassifier(1)
+    else:
+        print("Using KDTree")
+        classifier = KNNKDClassifier(1)
+
     classifier.train(train_set)
 
     metric = Validator.f1_measure(classifier, test_set)
     print("f1-measure={:.4f} for {}NN classifier".format(metric, k))
 
-def visualization_90_10():
+
+def visualization_90_10(method):
     objects = read_training_set()
     shuffle(objects)
 
@@ -55,7 +69,13 @@ def visualization_90_10():
     test_set = objects[train_set_len:]
 
     k = 3
-    classifier = KNNClassifier(k)
+    if method == 1:
+        print("Using list")
+        classifier = KNNClassifier(1)
+    else:
+        print("Using KDTree")
+        classifier = KNNKDClassifier(1)
+
     classifier.train(train_set)
 
     for point in train_set:
@@ -64,14 +84,16 @@ def visualization_90_10():
     visualizer = Visualizer()
     visualizer.visualize(train_set, test_set)
 
+
 if __name__ == '__main__':
     type = 2
+    method = 2
 
     if type == 1:
-        guessing_game()
+        guessing_game(method)
     elif type == 2:
-        validation_90_10()
+        validation_90_10(method)
     elif type == 3:
-        visualization_90_10()
+        visualization_90_10(method)
     else:
         print('Wrong mode')
