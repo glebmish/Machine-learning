@@ -1,5 +1,4 @@
 from kNN.KNNClassifier import KNNClassifier
-from kNN.KDTree.KNNKDClassifier import KNNKDClassifier
 
 class Validator(object):
     @staticmethod
@@ -11,7 +10,7 @@ class Validator(object):
 
     @staticmethod
     def f1_measure(classifier, test_set):
-        assert isinstance(classifier, KNNClassifier) or isinstance(classifier, KNNKDClassifier)
+        assert isinstance(classifier, KNNClassifier)
 
         guessed_cls = [classifier.classify(point) for point in test_set]
         correct_cls = [point.cls for point in test_set]
