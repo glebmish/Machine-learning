@@ -21,10 +21,12 @@ class KDTree:
 
         p1, p2, med = KDTree.divide(p, division)
 
+        if len(p1) == 0 or len(p2) == 0:
+            division = Division.switch_division(division)
         if len(p1) == 0:
-            p1, p2, tmp = KDTree.divide(p2, Division.switch_division(division))
+            p1, p2, med = KDTree.divide(p2, division)
         elif len(p2) == 0:
-            p1, p2, tmp = KDTree.divide(p1, Division.switch_division(division))
+            p1, p2, med = KDTree.divide(p1, division)
 
         left = KDTree.build(p1, depth + 1)
         right = KDTree.build(p2, depth + 1)
@@ -45,25 +47,42 @@ class KDTree:
             med = median([point.x for point in p])
             p1 = [point for point in p if point.x < med]
             p2 = [point for point in p if point.x >= med]
-            print("X median is: ", med)
-            print(p1)
-            print(p2)
         else:
             p.sort(key=Division.div_y)
             med = median([point.y for point in p])
             p1 = [point for point in p if point.y < med]
             p2 = [point for point in p if point.y >= med]
-            print("Y median is: ", med)
-            print(p1)
-            print(p2)
 
         return p1, p2, med
 
+    def find_n_neighbors(self, n, point):
+        return KDTree.find(self.root, point, n)
 
-if __name__ == '__main__':
-    objects = read_training_set()
-    kd = KDTree(objects)
-    print("Done")
-    # still have no idea how to use it. Seems like we should
-    # traverse down the tree and count distance each time to
-    # decide if we should go left or right
+    @staticmethod
+    def find(node, point, n):
+        if node.point is None:
+            more_neighbors = None
+            if node.div == Division.x:
+                if point.x < node.med:
+                    neighbors = KDTree.find(node.left, point, n)
+                    if len(neighbors) < n:
+                        more_neighbors = KDTree.find(node.right, point, n - len(neighbors))
+                else:
+                    neighbors = KDTree.find(node.right, point, n)
+                    if len(neighbors) < n:
+                        more_neighbors = KDTree.find(node.left, point, n - len(neighbors))
+            else:
+                if point.y < node.med:
+                    neighbors = KDTree.find(node.left, point, n)
+                    if len(neighbors) < n:
+                        more_neighbors = KDTree.find(node.right, point, n - len(neighbors))
+                else:
+                    neighbors = KDTree.find(node.right, point, n)
+                    if len(neighbors) < n:
+                        more_neighbors = KDTree.find(node.left, point, n - len(neighbors))
+            if more_neighbors is None:
+                return neighbors
+            else:
+                return neighbors + more_neighbors
+        else:
+            return [node.point]
