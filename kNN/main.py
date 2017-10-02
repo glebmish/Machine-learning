@@ -63,7 +63,7 @@ def visualization_90_10():
 
     classifier.train(train_set)
 
-    for point in train_set:
+    for point in test_set:
         point.cls = classifier.classify(point)
 
     visualizer = Visualizer()
