@@ -2,7 +2,7 @@ from random import shuffle
 
 from kNN.reader import *
 from kNN.Point import Point
-from kNN.KNNClassifier import KNNClassifier
+from kNN.KNNClassifier import *
 from kNN.Validator import Validator
 from kNN.Visualizer import Visualizer
 
@@ -55,11 +55,11 @@ def visualization_90_10():
     test_set = objects[train_set_len:]
 
     k = 3
-    classifier = KNNClassifier(k)
+    classifier = KNNClassifier(k, class_resolver=resolve_class_kernel_function)
     classifier.train(train_set)
 
     for point in train_set:
-        point = classifier.classify(point)
+        point.cls = classifier.classify(point)
 
     visualizer = Visualizer()
     visualizer.visualize(train_set, test_set)
