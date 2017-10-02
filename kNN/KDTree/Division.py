@@ -9,3 +9,11 @@ class Division:
             return Division.y
         else:
             return Division.x
+
+    @staticmethod
+    def div_x(point):
+        return point.x
+
+    @staticmethod
+    def div_y(point):
+        return point.y
