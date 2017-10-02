@@ -1,7 +1,26 @@
-from kNN.KDTree.Division import Division
-from kNN.KDTree.KDNode import KDNode
 from statistics import median
-from kNN.reader import *
+from enum import Enum
+
+from kNN.KDTree.KDNode import KDNode
+
+
+class Division(Enum):
+    x = 'X'
+    y = 'Y'
+
+    def switch(self):
+        if self == Division.y:
+            return Division.x
+        else:
+            return Division.y
+
+    @staticmethod
+    def div_x(point):
+        return point.x
+
+    @staticmethod
+    def div_y(point):
+        return point.y
 
 
 class KDTree:
@@ -22,7 +41,7 @@ class KDTree:
         p1, p2, med = KDTree.divide(p, division)
 
         if len(p1) == 0 or len(p2) == 0:
-            division = Division.switch_division(division)
+            division = division.switch()
         if len(p1) == 0:
             p1, p2, med = KDTree.divide(p2, division)
         elif len(p2) == 0:
