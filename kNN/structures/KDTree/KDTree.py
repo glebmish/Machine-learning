@@ -1,7 +1,7 @@
-from statistics import median
 from enum import Enum
+from statistics import median
 
-from kNN.KDTree.KDNode import KDNode
+from structures.KDTree.KDNode import KDNode
 
 
 class Division(Enum):

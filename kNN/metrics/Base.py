@@ -6,5 +6,5 @@ class Base:
         self.n = n
         self.normal = normal
 
-    def metric(self, point):
+    def distance(self, point_a, point_b):
         return 0

@@ -8,7 +8,9 @@ class Minkovsky(Base):
     def __init__(self, n, normal):
         super().__init__(n, normal)
 
-    def metric(self, point):
-        assert isinstance(point, Point)
-        sum = point.x ** self.n + point.y ** self.n
-        return math.pow(sum, 1/n) / self.normal
+    def distance(self, point_a, point_b):
+        assert isinstance(point_a, Point)
+        assert isinstance(point_b, Point)
+        sum = math.pow(math.fabs((point_a.x - point_b.x)), self.n) \
+            + math.pow(math.fabs((point_a.y - point_b.y)), self.n)
+        return math.pow(sum, 1/self.n) / self.normal

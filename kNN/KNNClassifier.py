@@ -1,6 +1,6 @@
 import math
 
-from kNN.KDTree.KDTree import KDTree
+from structures.KDTree.KDTree import KDTree
 
 
 def resolve_class_more_neighbours(point, k_nearest):
@@ -10,7 +10,7 @@ def resolve_class_more_neighbours(point, k_nearest):
 def resolve_class_kernel_function(point, k_nearest):
     def distance(p1, p2):
         return math.sqrt((p2.x - p1.x) ** 2 + (p2.y - p1.y) ** 2)
-    
+
     def distances(cls):
         return [distance(point, p_from_k) for p_from_k in k_nearest if p_from_k.cls == cls]
 

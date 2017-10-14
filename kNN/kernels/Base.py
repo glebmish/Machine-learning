@@ -6,5 +6,5 @@ class Base:
         assert isinstance(metric, metrics.Base.Base)
         self.metric = metric
 
-    def function(self, point):
+    def function(self, u):
         return 1 / 2
