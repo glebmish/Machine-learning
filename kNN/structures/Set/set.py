@@ -4,8 +4,8 @@ import kNN
 class Set(object):
     def __init__(self, points, kernel, metric):
         assert isinstance(points, list)
-        assert isinstance(kernel, kNN.kernels.Base.Base)
-        assert isinstance(metric, kNN.metrics.Base.Base)
+        assert isinstance(kernel, kNN.kernels.KernelBase.KernelBase)
+        assert isinstance(metric, kNN.metrics.MetricBase.MetricBase)
         super().__init__()
         self.__points = points
         self.__kernel = kernel

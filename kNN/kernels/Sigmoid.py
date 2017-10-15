@@ -1,9 +1,9 @@
 import math
 
-from kNN.kernels.Base import Base
+from kNN.kernels.KernelBase import KernelBase
 
 
-class Sigmoid(Base):
+class Sigmoid(KernelBase):
     def __init__(self, metric):
         super().__init__(metric)
 

@@ -1,7 +1,4 @@
-import Point
-
-
-class Base:
+class MetricBase:
     def __init__(self, n, normal):
         self.n = n
         self.normal = normal

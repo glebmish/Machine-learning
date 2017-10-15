@@ -10,8 +10,6 @@ class Validator(object):
 
     @staticmethod
     def f1_measure(classifier, test_set):
-        assert isinstance(classifier, KNNClassifier)
-
         guessed_cls = [classifier.classify(point) for point in test_set]
         correct_cls = [point.cls for point in test_set]
 
@@ -19,6 +17,8 @@ class Validator(object):
         counts = [[0, 0], [0, 0]]
         for cc, gc in zip(correct_cls, guessed_cls):
             counts[cc][gc] += 1
+
+        if counts[1][1] == 0: return 0
 
         recall = counts[1][1] / (counts[1][1] + counts[1][0])
         precision = counts[1][1] / (counts[1][1] + counts[0][1])

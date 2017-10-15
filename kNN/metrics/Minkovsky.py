@@ -1,10 +1,10 @@
 import math
 
-from Point import Point
-from kNN.metrics.Base import Base
+from kNN.Point import Point
+from kNN.metrics.MetricBase import MetricBase
 
 
-class Minkovsky(Base):
+class Minkovsky(MetricBase):
     def __init__(self, n, normal):
         super().__init__(n, normal)
 

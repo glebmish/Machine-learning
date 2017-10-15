@@ -1,7 +1,7 @@
-from structures.Set.set import Set
+from kNN.structures.Set.set import Set
 
 
-class KNNClassifier(object):
+class SimpleKNNClassifier(object):
     def __init__(self, k, kernel, metric):
         self.__k = k
         self.__set = None

@@ -1,7 +1,7 @@
-from kNN.kernels.Base import Base
+from kNN.kernels.KernelBase import KernelBase
 
 
-class Quartic(Base):
+class Quartic(KernelBase):
     def __init__(self, metric):
         super().__init__(metric)
 
