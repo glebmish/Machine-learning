@@ -1,0 +1,2470 @@
+Best F1: 0.6071428571428571
+Best F1: 0.6071428571428571
+Tan transform, 2 folds,
+4-NN, Minkovsky-0.1, Triangular
+
+Best F1: 0.6071428571428571
+Best F1: 0.6071428571428571
+Tan transform, 2 folds,
+4-NN, Minkovsky-0.1, Quartic
+
+Best F1: 0.6206896551724138
+Best F1: 0.6206896551724138
+Tan transform, 2 folds,
+4-NN, Minkovsky-0.1, Sigmoid
+
+Best F1: 0.6315789473684211
+Best F1: 0.6315789473684211
+Tan transform, 2 folds,
+4-NN, Minkovsky-0.2, Triangular
+
+Best F1: 0.6428571428571429
+Best F1: 0.6428571428571429
+Tan transform, 2 folds,
+4-NN, Minkovsky-0.2, Quartic
+
+Best F1: 0.6428571428571429
+Best F1: 0.6428571428571429
+Tan transform, 2 folds,
+4-NN, Minkovsky-0.2, Gaussian
+
+Best F1: 0.6428571428571429
+Best F1: 0.6428571428571429
+Tan transform, 2 folds,
+4-NN, Minkovsky-0.2, Sigmoid
+
+Best F1: 0.7017543859649122
+Best F1: 0.7017543859649122
+Tan transform, 2 folds,
+4-NN, Minkovsky-0.3, Triangular
+
+Best F1: 0.7017543859649122
+Best F1: 0.7017543859649122
+Tan transform, 2 folds,
+4-NN, Minkovsky-0.3, Epanechnikov
+
+Best F1: 0.7142857142857143
+Best F1: 0.7142857142857143
+Tan transform, 2 folds,
+4-NN, Minkovsky-0.4, Triangular
+
+Best F1: 0.7241379310344827
+Best F1: 0.7241379310344827
+Tan transform, 2 folds,
+4-NN, Minkovsky-0.5, Triangular
+
+Best F1: 0.7272727272727273
+Best F1: 0.7272727272727273
+Tan transform, 2 folds,
+4-NN, Minkovsky-0.5, Epanechnikov
+
+Best F1: 0.7457627118644068
+Best F1: 0.7457627118644068
+Tan transform, 2 folds,
+4-NN, Minkovsky-0.5, Gaussian
+
+Best F1: 0.7636363636363638
+Best F1: 0.7636363636363638
+Tan transform, 2 folds,
+5-NN, Minkovsky-1.0, Epanechnikov
+
+Best F1: 0.7636363636363638
+Best F1: 0.7636363636363638
+Tan transform, 2 folds,
+6-NN, Minkovsky-1.0, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.5, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.5, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.5, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.5, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.6, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.6, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.6, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.6, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.7, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.7, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.7, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.7, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.8, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.8, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.8, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.8, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.8, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.9, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.9, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.9, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.9, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-0.9, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.0, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.0, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.0, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.0, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.0, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.1, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.1, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.1, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.1, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.1, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.2, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.2, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.2, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.2, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.2, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.3, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.3, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.3, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.3, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.3, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.4, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.4, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.4, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.4, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.4, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.5, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.5, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.5, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.5, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.5, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.6, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.6, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.6, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.6, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.6, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.7, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.7, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.7, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.7, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.7, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.8, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.8, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.8, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.8, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.8, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.9, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.9, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.9, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.9, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-1.9, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.0, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.0, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.0, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.0, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.0, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.1, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.1, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.1, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.1, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.1, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.2, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.2, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.2, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.2, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.2, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.3, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.3, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.3, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.3, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.3, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.4, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.4, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.4, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.4, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.4, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.5, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.5, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.5, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.5, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.5, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.6, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.6, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.6, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.6, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.6, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.7, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.7, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.7, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.7, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.7, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.8, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.8, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.8, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.8, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.8, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.9, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.9, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.9, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.9, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-2.9, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-3.0, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-3.0, Epanechnikov
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-3.0, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+4-NN, Minkovsky-3.0, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+5-NN, Minkovsky-0.5, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+5-NN, Minkovsky-0.5, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+5-NN, Minkovsky-0.6, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+5-NN, Minkovsky-0.6, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+5-NN, Minkovsky-0.7, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+5-NN, Minkovsky-0.7, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+5-NN, Minkovsky-0.7, Gaussian
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+5-NN, Minkovsky-0.7, Sigmoid
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+5-NN, Minkovsky-0.8, Triangular
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+5-NN, Minkovsky-0.8, Quartic
+
+Best F1: 0.8095238095238095
+Best F1: 0.8095238095238095
+Tan transform, 3 folds,
+5-NN, Minkovsky-0.8, Epanechnikov
+
+Best F1: 0.8372093023255814
+Best F1: 0.8372093023255814
+Tan transform, 3 folds,
+5-NN, Minkovsky-0.8, Gaussian
+
+Best F1: 0.8372093023255814
+Best F1: 0.8372093023255814
+Tan transform, 3 folds,
+5-NN, Minkovsky-0.8, Sigmoid
+
+Best F1: 0.8372093023255814
+Best F1: 0.8372093023255814
+Tan transform, 3 folds,
+5-NN, Minkovsky-1.4, Gaussian
+
+Best F1: 0.8372093023255814
+Best F1: 0.8372093023255814
+Tan transform, 3 folds,
+5-NN, Minkovsky-1.4, Sigmoid
+
+Best F1: 0.8372093023255814
+Best F1: 0.8372093023255814
+Tan transform, 3 folds,
+5-NN, Minkovsky-1.5, Gaussian
+
+Best F1: 0.8372093023255814
+Best F1: 0.8372093023255814
+Tan transform, 3 folds,
+5-NN, Minkovsky-1.5, Sigmoid
+
+Best F1: 0.8372093023255814
+Best F1: 0.8372093023255814
+Tan transform, 3 folds,
+5-NN, Minkovsky-1.6, Gaussian
+
+Best F1: 0.8372093023255814
+Best F1: 0.8372093023255814
+Tan transform, 3 folds,
+5-NN, Minkovsky-1.6, Sigmoid
+
+Best F1: 0.8372093023255814
+Best F1: 0.8372093023255814
+Tan transform, 3 folds,
+6-NN, Minkovsky-0.4, Triangular
+
+Best F1: 0.8571428571428571
+Best F1: 0.8571428571428571
+Tan transform, 3 folds,
+6-NN, Minkovsky-1.1, Gaussian
+
+Best F1: 0.8571428571428571
+Best F1: 0.8571428571428571
+Tan transform, 3 folds,
+6-NN, Minkovsky-1.1, Sigmoid
+
+Best F1: 0.8571428571428571
+Best F1: 0.8571428571428571
+Tan transform, 3 folds,
+6-NN, Minkovsky-1.2, Gaussian
+
+Best F1: 0.8571428571428571
+Best F1: 0.8571428571428571
+Tan transform, 3 folds,
+6-NN, Minkovsky-1.2, Sigmoid
+
+Best F1: 0.8571428571428571
+Best F1: 0.8571428571428571
+Tan transform, 3 folds,
+6-NN, Minkovsky-1.3, Gaussian
+
+Best F1: 0.8571428571428571
+Best F1: 0.8571428571428571
+Tan transform, 3 folds,
+6-NN, Minkovsky-1.3, Sigmoid
+
+Best F1: 0.8571428571428571
+Best F1: 0.8571428571428571
+Tan transform, 3 folds,
+6-NN, Minkovsky-1.4, Gaussian
+
+Best F1: 0.8571428571428571
+Best F1: 0.8571428571428571
+Tan transform, 3 folds,
+6-NN, Minkovsky-1.4, Sigmoid
+
+Best F1: 0.8571428571428571
+Best F1: 0.8571428571428571
+Tan transform, 3 folds,
+7-NN, Minkovsky-1.2, Epanechnikov
+
+Best F1: 0.8888888888888888
+Best F1: 0.8888888888888888
+Tan transform, 4 folds,
+5-NN, Minkovsky-0.6, Gaussian
+
+Best F1: 0.8888888888888888
+Best F1: 0.8888888888888888
+Tan transform, 4 folds,
+5-NN, Minkovsky-0.6, Sigmoid
+
+Best F1: 0.9142857142857143
+Best F1: 0.9142857142857143
+Tan transform, 4 folds,
+5-NN, Minkovsky-0.7, Gaussian
+
+Best F1: 0.9142857142857143
+Best F1: 0.9142857142857143
+Tan transform, 4 folds,
+5-NN, Minkovsky-0.7, Sigmoid
+
+Best F1: 0.9142857142857143
+Best F1: 0.9142857142857143
+Tan transform, 4 folds,
+5-NN, Minkovsky-0.8, Gaussian
+
+Best F1: 0.9142857142857143
+Best F1: 0.9142857142857143
+Tan transform, 4 folds,
+5-NN, Minkovsky-0.8, Sigmoid
+
+Best F1: 0.9333333333333333
+Best F1: 0.9333333333333333
+Tan transform, 5 folds,
+5-NN, Minkovsky-0.7, Gaussian
+
+Best F1: 0.9333333333333333
+Best F1: 0.9333333333333333
+Tan transform, 5 folds,
+5-NN, Minkovsky-0.7, Sigmoid
+
+Best F1: 0.9333333333333333
+Best F1: 0.9333333333333333
+Tan transform, 5 folds,
+5-NN, Minkovsky-0.8, Gaussian
+
+Best F1: 0.9333333333333333
+Best F1: 0.9333333333333333
+Tan transform, 5 folds,
+5-NN, Minkovsky-0.8, Sigmoid
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.4, Triangular
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.4, Quartic
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.4, Epanechnikov
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.4, Gaussian
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.4, Sigmoid
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.5, Triangular
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.5, Quartic
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.5, Epanechnikov
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.5, Gaussian
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.5, Sigmoid
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.6, Epanechnikov
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.6, Gaussian
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.6, Sigmoid
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.7, Gaussian
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.7, Sigmoid
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.8, Gaussian
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+4-NN, Minkovsky-0.8, Sigmoid
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.4, Triangular
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.4, Quartic
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.4, Epanechnikov
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.5, Triangular
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.5, Quartic
+
+Best F1: 0.9411764705882353
+Best F1: 0.9411764705882353
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.5, Epanechnikov
+
+Best F1: 0.9473684210526316
+Best F1: 0.9473684210526316
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.5, Gaussian
+
+Best F1: 0.9473684210526316
+Best F1: 0.9473684210526316
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.5, Sigmoid
+
+Best F1: 0.9473684210526316
+Best F1: 0.9473684210526316
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.6, Gaussian
+
+Best F1: 0.9473684210526316
+Best F1: 0.9473684210526316
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.6, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.7, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.7, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.8, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.8, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.9, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-0.9, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.0, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.0, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.1, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.1, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.2, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.2, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.3, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.3, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.4, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.4, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.5, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.5, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.6, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.6, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.7, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.7, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.8, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.8, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.9, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-1.9, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.0, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.0, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.1, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.1, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.2, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.2, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.3, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.3, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.4, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.4, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.5, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.5, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.6, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.6, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.7, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.7, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.8, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.8, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.9, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-2.9, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-3.0, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 9 folds,
+5-NN, Minkovsky-3.0, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-0.7, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-0.7, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-0.8, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-0.8, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-0.9, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-0.9, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.0, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.0, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.1, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.1, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.2, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.2, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.3, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.3, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.4, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.4, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.5, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.5, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.6, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.6, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.7, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.7, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.8, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.8, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.9, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-1.9, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.0, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.0, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.1, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.1, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.2, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.2, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.3, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.3, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.4, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.4, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.5, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.5, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.6, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.6, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.7, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.7, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.8, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.8, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.9, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-2.9, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-3.0, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 13 folds,
+5-NN, Minkovsky-3.0, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.4, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.4, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.4, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.4, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.4, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.5, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.5, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.5, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.5, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.5, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.6, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.6, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.6, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.7, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.7, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.8, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+4-NN, Minkovsky-0.8, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.4, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.4, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.4, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.5, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.5, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.5, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.6, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.6, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.6, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.7, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.7, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.7, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.7, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.8, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.8, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.8, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.8, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.9, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-0.9, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.0, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.0, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.1, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.1, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.2, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.2, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.3, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.3, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.4, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.4, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.5, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.5, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.6, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.6, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.7, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.7, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.8, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.8, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.9, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-1.9, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.0, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.0, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.1, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.1, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.2, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.2, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.3, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.3, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.4, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.4, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.5, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.5, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.6, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.6, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.7, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.7, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.8, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.8, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.9, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-2.9, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-3.0, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+5-NN, Minkovsky-3.0, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.4, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.4, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.5, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.5, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.5, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.6, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.6, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.6, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.7, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.7, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.7, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.7, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.7, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.8, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.8, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.8, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.8, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.8, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.9, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.9, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.9, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.9, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-0.9, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.0, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.0, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.0, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.0, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.0, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.1, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.1, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.1, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.1, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.1, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.2, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.2, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.2, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.2, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.3, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.3, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.3, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.3, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.4, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+6-NN, Minkovsky-1.5, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.4, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.4, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.5, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.5, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.5, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.6, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.6, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.6, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.7, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.7, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.7, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.8, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.8, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.8, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.9, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.9, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-0.9, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-1.0, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-1.0, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-1.0, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-1.1, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-1.1, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-1.1, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-1.2, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-1.2, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-1.3, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-1.3, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-1.4, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-1.5, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-2.7, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-2.7, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-2.8, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-2.8, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-2.9, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-2.9, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-3.0, Gaussian
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+7-NN, Minkovsky-3.0, Sigmoid
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.4, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.4, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.5, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.5, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.5, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.6, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.6, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.6, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.7, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.7, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.7, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.8, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.8, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.8, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.9, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.9, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-0.9, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-1.0, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-1.0, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-1.1, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-1.1, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-1.1, Epanechnikov
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+8-NN, Minkovsky-1.2, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+9-NN, Minkovsky-0.1, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+9-NN, Minkovsky-0.4, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+9-NN, Minkovsky-0.5, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+9-NN, Minkovsky-0.6, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+9-NN, Minkovsky-0.7, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+9-NN, Minkovsky-0.8, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+9-NN, Minkovsky-0.9, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+9-NN, Minkovsky-1.0, Triangular
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+9-NN, Minkovsky-1.0, Quartic
+
+Best F1: 1.0
+Best F1: 1.0
+Tan transform, 14 folds,
+9-NN, Minkovsky-1.1, Quartic
+
