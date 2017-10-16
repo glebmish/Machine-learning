@@ -10,3 +10,11 @@ class Point(object):
 
     def __repr__(self):
         return self.__str__()
+
+    @staticmethod
+    def cmp_x(point_a, point_b):
+        return point_a.x - point_b.x
+
+    @staticmethod
+    def cmp_y(point_a, point_b):
+        return point_a.y - point_b.y
