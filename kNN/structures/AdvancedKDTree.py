@@ -1,9 +1,12 @@
 from random import seed, random
-from time import clock
-from operator import itemgetter
 from collections import namedtuple
 from math import sqrt
 from copy import deepcopy
+
+from kNN.reader import read_training_set
+from kNN.Point import Point
+from kNN.metrics.MetricBase import MetricBase
+from kNN.metrics.Minkovsky import Minkovsky
 
 
 def sqd(p1, p2):
@@ -11,10 +14,10 @@ def sqd(p1, p2):
 
 
 class KdNode(object):
-    __slots__ = ("dom_elt", "split", "left", "right")
+    __slots__ = ("dom_value", "split", "left", "right")
 
-    def __init__(self, dom_elt, split, left, right):
-        self.dom_elt = dom_elt
+    def __init__(self, dom_value, split, left, right):
+        self.dom_value = dom_value
         self.split = split
         self.left = left
         self.right = right
@@ -28,80 +31,94 @@ class Orthotope(object):
 
 
 class KdTree(object):
-    __slots__ = ("n", "bounds")
+    __slots__ = ("root", "bounds", "metric")
 
-    def __init__(self, pts, bounds):
-        def nk2(split, exset):
-            if not exset:
+    def __init__(self, pts, bounds, metric):
+        def build(split, existing_set):
+            if not existing_set:
                 return None
-            exset.sort(key=itemgetter(split))
-            m = len(exset) // 2
-            d = exset[m]
-            while m + 1 < len(exset) and exset[m + 1][split] == d[split]:
-                m += 1
+            if split % 2 == 0:
+                existing_set = sorted(existing_set, key=lambda point: point.x)
+            else:
+                existing_set = sorted(existing_set, key=lambda point: point.y)
+            half_count = len(existing_set) // 2
+            middle = existing_set[half_count]
+            while half_count + 1 < len(existing_set) and \
+                    (split % 2 == 0 and existing_set[half_count + 1].x == middle.x or
+                     split % 2 != 0 and existing_set[half_count + 1].y == middle.y):
+                half_count += 1
 
-            s2 = (split + 1) % len(d)  # cycle coordinates
-            return KdNode(d, split, nk2(s2, exset[:m]),
-                          nk2(s2, exset[m + 1:]))
+            s2 = (split + 1) % 2  # cycle coordinates
+            return KdNode(middle, split, build(s2, existing_set[:half_count]),
+                          build(s2, existing_set[half_count + 1:]))
 
-        self.n = nk2(0, pts)
+        assert isinstance(metric, MetricBase)
+        self.root = build(0, pts)
         self.bounds = bounds
+        self.metric = metric
 
+    def find_nearest(self, k, p):
+        def find(kd, target, limit, max_dist_sqd):
+            T3 = namedtuple("T3", "nearest dist_sqd nodes_visited")
 
-T3 = namedtuple("T3", "nearest dist_sqd nodes_visited")
+            if kd is None:
+                return T3([Point(0.0, 0.0)] * k, float("inf"), 0)
 
+            nodes_visited = 1
+            s = kd.split
+            pivot = kd.dom_value
+            left_limit = deepcopy(limit)
+            right_limit = deepcopy(limit)
 
-def find_nearest(k, t, p):
-    def nn(kd, target, hr, max_dist_sqd):
-        if kd is None:
-            return T3([0.0] * k, float("inf"), 0)
+            if s % 2 == 0:
+                pivot_s = pivot.x
+                target_s = target.x
+                left_limit.max.x = pivot.x
+                right_limit.min.x = pivot.x
+            else:
+                pivot_s = pivot.y
+                target_s = target.y
+                left_limit.max.y = pivot.y
+                right_limit.min.y = pivot.y
 
-        nodes_visited = 1
-        s = kd.split
-        pivot = kd.dom_elt
-        left_hr = deepcopy(hr)
-        right_hr = deepcopy(hr)
-        left_hr.max[s] = pivot[s]
-        right_hr.min[s] = pivot[s]
+            if target_s <= pivot_s:
+                nearer_kd, nearer_hr = kd.left, left_limit
+                further_kd, further_hr = kd.right, right_limit
+            else:
+                nearer_kd, nearer_hr = kd.right, right_limit
+                further_kd, further_hr = kd.left, left_limit
 
-        if target[s] <= pivot[s]:
-            nearer_kd, nearer_hr = kd.left, left_hr
-            further_kd, further_hr = kd.right, right_hr
-        else:
-            nearer_kd, nearer_hr = kd.right, right_hr
-            further_kd, further_hr = kd.left, left_hr
+            n1 = find(nearer_kd, target, nearer_hr, max_dist_sqd)
+            nearest = n1.nearest
+            dist_sqd = n1.dist_sqd
+            nodes_visited += n1.nodes_visited
 
-        n1 = nn(nearer_kd, target, nearer_hr, max_dist_sqd)
-        nearest = n1.nearest
-        dist_sqd = n1.dist_sqd
-        nodes_visited += n1.nodes_visited
+            if dist_sqd < max_dist_sqd:
+                max_dist_sqd = dist_sqd
+            d = (pivot_s - target_s) ** 2
+            if d > max_dist_sqd:
+                return T3(nearest, dist_sqd, nodes_visited)
+            d = self.metric.distance(pivot, target)
+            if d < dist_sqd:
+                nearest = pivot
+                dist_sqd = d
+                max_dist_sqd = dist_sqd
 
-        if dist_sqd < max_dist_sqd:
-            max_dist_sqd = dist_sqd
-        d = (pivot[s] - target[s]) ** 2
-        if d > max_dist_sqd:
+            n2 = find(further_kd, target, further_hr, max_dist_sqd)
+            nodes_visited += n2.nodes_visited
+            if n2.dist_sqd < dist_sqd:
+                nearest = n2.nearest
+                dist_sqd = n2.dist_sqd
+
             return T3(nearest, dist_sqd, nodes_visited)
-        d = sqd(pivot, target)
-        if d < dist_sqd:
-            nearest = pivot
-            dist_sqd = d
-            max_dist_sqd = dist_sqd
 
-        n2 = nn(further_kd, target, further_hr, max_dist_sqd)
-        nodes_visited += n2.nodes_visited
-        if n2.dist_sqd < dist_sqd:
-            nearest = n2.nearest
-            dist_sqd = n2.dist_sqd
-
-        return T3(nearest, dist_sqd, nodes_visited)
-
-    return nn(t.n, p, t.bounds, float("inf"))
+        return find(self.root, p, self.bounds, float("inf"))
 
 
 def show_nearest(k, heading, kd, p):
     print(heading + ":")
     print("Point:           ", p)
-    n = find_nearest(k, kd, p)
+    n = kd.find_nearest(k, p)
     print("Nearest neighbor:", n.nearest)
     print("Distance:        ", sqrt(n.dist_sqd))
     print("Nodes visited:   ", n.nodes_visited, "\n")
@@ -116,18 +133,9 @@ def random_points(k, n):
 
 
 if __name__ == "__main__":
-    seed(1)
-    P = lambda *coords: list(coords)
-    kd1 = KdTree([P(2, 3), P(5, 4), P(9, 6), P(4, 7), P(8, 1), P(7, 2)],
-                 Orthotope(P(0, 0), P(10, 10)))
-    show_nearest(2, "Wikipedia example data", kd1, P(9, 2))
-
-    N = 400000
-    t0 = clock()
-    kd2 = KdTree(random_points(3, N), Orthotope(P(0, 0, 0), P(1, 1, 1)))
-    t1 = clock()
-    text = lambda *parts: "".join(map(str, parts))
-    show_nearest(2, text("k-d tree with ", N,
-                         " random 3D points (generation time: ",
-                         t1 - t0, "s)"),
-                 kd2, random_point(3))
+    points = read_training_set()
+    target = Point(0.5, 0.5)
+    metric = Minkovsky(2)
+    print(sorted([metric.distance(target, point) for point in points]))
+    kd = KdTree(points, Orthotope(Point(-2.0, -2.0), Point(2.0, 2.0)), metric)
+    show_nearest(2, "Example", kd, target)
