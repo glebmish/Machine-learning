@@ -22,6 +22,21 @@ MIN_FOLDS = 2
 MAX_FOLDS = 15
 
 
+def print_avg_stats(name, iterable, avgs, counters, file):
+    for item in iterable:
+        file.write("Average F for " + name + " = " + str(item) + ": " + str(avgs[iterable.index(item)] / counters[iterable.index(item)]) + "\n")
+        file.flush()
+
+    max_avg = -1
+    for item in iterable:
+        value = avgs[iterable.index(item)] / counters[iterable.index(item)]
+        if value > max_avg:
+            max_avg = value
+            max_item = item
+    file.write("\nMax F1: " + str(max_avg) + ", " + name + " = " + str(max_item))
+    file.flush()
+
+
 if __name__ == '__main__':
     data = read_training_set()
     shuffle(data)
@@ -49,10 +64,10 @@ if __name__ == '__main__':
     Iterate over: Transfomers, Folds, k, metrics and kernels.
     """
 
-    avgs_for_global = [0 for i in range(0, len(transformers))]
-    counts_for_global = [0 for i in range(0, len(transformers))]
+    avgs_for_transform = [0 for i in range(0, len(transformers))]
+    counts_for_transform = [0 for i in range(0, len(transformers))]
 
-    with open("results/avg.txt", "w") as avg_global_file:
+    with open("results/avg.txt", "w") as avg_transform_file:
 
         for transformer in transformers:
             print("Transformer: ", str(transformer))
@@ -61,7 +76,7 @@ if __name__ == '__main__':
             try: os.mkdir("results/" + str(transformer))
             except: pass
 
-            with open("results/" + str(transformer) + "/avg.txt", "w") as avg_transform_file:
+            with open("results/" + str(transformer) + "/avg.txt", "w") as avg_folds_file:
 
                 avgs_for_folds = [0 for i in range(MIN_FOLDS, MAX_FOLDS)]
                 counts_for_folds = [0 for i in range(MIN_FOLDS, MAX_FOLDS)]
@@ -110,8 +125,8 @@ if __name__ == '__main__':
                                     avgs_for_folds[folds - MIN_FOLDS] += f1
                                     counts_for_folds[folds - MIN_FOLDS] += 1
 
-                                    avgs_for_global[transformers.index(transformer)] += f1
-                                    counts_for_global[transformers.index(transformer)] += 1
+                                    avgs_for_transform[transformers.index(transformer)] += f1
+                                    counts_for_transform[transformers.index(transformer)] += 1
 
                                     if f1 >= max_f1:
                                         max_f1 = f1
@@ -120,8 +135,8 @@ if __name__ == '__main__':
                                         best_metric = str(metric)
                                         best_kernel = str(kernel)
 
-                                    if max_f1 == 1.0:
-                                        file.write("\tBest F1: " + str(max_f1) + "\n")
+                                    if f1 == 1.0:
+                                        file.write("\tBest F1: " + str(f1) + "\n")
                                         file.write("\t" + str(metric) + ", " + str(kernel) + "\n\n")
 
                             if max_f1 != 1.0:
@@ -130,43 +145,10 @@ if __name__ == '__main__':
 
                         # append with for-each k stats
                         file.write("\n")
-                        for k in range(MIN_K, MAX_K):
-                            file.write("Average F for k = " + str(k) + ": " + str(avgs_for_k[k - MIN_K] / counts_for_k[k - MIN_K]) + "\n")
-                            file.flush()
-
-                        max_avg_for_k = -1
-                        for k in range(MIN_K, MAX_K):
-                            value = avgs_for_k[k - MIN_K] / counts_for_k[k - MIN_K]
-                            if value > max_avg_for_k:
-                                max_avg_for_k = value
-                                max_k = k
-                        file.write("\nMax F1 for k: " + str(max_avg_for_k) + ", k = " + str(max_k))
-                        file.flush()
+                        print_avg_stats("k", range(MIN_K, MAX_K), avgs_for_k, counts_for_k, file)
 
                 # print stats for transformer
-                for folds in range(MIN_FOLDS, MAX_FOLDS):
-                    avg_transform_file.write("Average F for folds = " + str(folds) + ": " + str(avgs_for_folds[folds - MIN_FOLDS] / counts_for_folds[folds - MIN_FOLDS]) + "\n")
-                    avg_transform_file.flush()
-
-                max_avg_for_folds = -1
-                for folds in range(MIN_FOLDS, MAX_FOLDS):
-                    value = avgs_for_folds[folds - MIN_FOLDS] / counts_for_folds[folds - MIN_FOLDS]
-                    if value > max_avg_for_folds:
-                        max_avg_for_folds = value
-                        max_folds = folds
-                avg_transform_file.write("\nMax F1 for folds: " + str(max_avg_for_folds) + ", folds = " + str(max_folds))
-                avg_transform_file.flush()
+                print_avg_stats("folds", range(MIN_FOLDS, MAX_FOLDS), avgs_for_folds, counts_for_folds, avg_folds_file)
 
         # print status for global
-        for transformer in transformers:
-            avg_global_file.write("Average F for transformer = " + str(transformer) + ": " + str(avgs_for_global[transformers.index(transformer)] / counts_for_global[transformers.index(transformer)]) + "\n")
-            avg_global_file.flush()
-
-        max_avg_for_folds = -1
-        for transformer in transformers:
-            value = avgs_for_global[transformers.index(transformer)] / counts_for_global[transformers.index(transformer)]
-            if value > max_avg_for_folds:
-                max_avg_for_folds = value
-                max_transformer = transformer
-        avg_global_file.write("\nMax F1: " + str(max_avg_for_folds) + ", transformer = " + str(max_transformer))
-        avg_global_file.flush()
+        print_avg_stats("transform", transformers, avgs_for_transform, counts_for_transform, avg_transform_file)
