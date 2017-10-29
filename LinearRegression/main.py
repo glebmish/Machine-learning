@@ -1,16 +1,15 @@
 from LinearRegression.reader import read_training_set
 from LinearRegression.Visualizer import Visualizer
 from LinearRegression.regression import LinRegression
-
-def func(x, y):
-    return x * y
+from LinearRegression.algorithms import gradient
 
 if __name__ == '__main__':
     flats = read_training_set()
 
-    regression = LinRegression()
+    gradient = gradient.Gradient(weight_low=1, weight_high=2)
+
+    regression = LinRegression(fit_method=gradient.fit)
     regression.fit(flats)
-    print(regression.predict(flats[0]))
 
     vis = Visualizer()
     vis.visualize(flats, regression.W)
