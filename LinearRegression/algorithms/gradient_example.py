@@ -9,14 +9,17 @@ class LinRegression:
         self.W = []  # model's weights
         self.fscaling = False  # is feature scaling used
 
-    def cost(self, y_real, y_pred):
-        # cost function for gradient descent algorithm
+    def error(self, y_real, y_pred):
+        # error function for gradient descent algorithm
         return np.sum((y_pred - y_real) ** 2) / (len(y_real))
+
+    def error_derivative(self, dy, X_tr, n, m):
+        return (np.dot(dy.T, X_tr)).reshape(n, 1) * 2 / m
 
     def gradient_descent_step(self, learning_rate, dy, m, n, X_tr):
         # one gradient descent step
-        s = (np.dot(dy.T, X_tr)).reshape(n, 1)
-        dW = 2 * (learning_rate * s / m).reshape(n, 1)
+        err_derivative = self.error_derivative(dy, X_tr, n, m)
+        dW = (learning_rate * err_derivative).reshape(n, 1)
         return self.W - dW
 
     def normalize(self, X):
@@ -56,27 +59,27 @@ class LinRegression:
         self.W = np.random.randint(low=weight_low, high=weight_high, size=(n, 1))
 
         y_pred = np.dot(X, self.W)
-        cost0 = self.cost(y, y_pred)
+        error_prev = self.error(y, y_pred)
         y = y.reshape(m, 1)
         k = 0
 
-        ########## Gradient descent's steps #########
+        # Gradient descent
         while True:
             dy = y_pred - y
             W_tmp = self.W
             self.W = self.gradient_descent_step(learning_rate, dy, m, n, X)
             y_pred = np.dot(X, self.W)
-            cost1 = self.cost(y, y_pred)
+            error = self.error(y, y_pred)
             k += 1
-            if (cost1 > cost0):
+            if error > error_prev:
                 self.W = W_tmp
                 break
 
-            if ((cost0 - cost1) < e) or (k == nsteps):
+            if error_prev - error < e or k == nsteps:
                 break
 
-            cost0 = cost1
-        #############################################
+            error_prev = error
+
         return self.W  # return model's weights
 
     def predict(self, X):
@@ -115,6 +118,7 @@ best_steps = 0
 best_error = 1.0e+30
 
 """ Just example of calculations """
+"""
 for rate in np.linspace(0.99, 0.999, 10, dtype=float):
     for weight_low in np.linspace(-1000, -500, 250, dtype=int):
         for weight_high in np.linspace(500, 1000, 250, dtype=int):
@@ -131,12 +135,12 @@ for rate in np.linspace(0.99, 0.999, 10, dtype=float):
                     best_wh = weight_high
                     best_steps = steps
                     best_error = error
-
+"""
 
 X = np.hstack((rooms, areas))
 y = np.array(prices)
 lr = LinRegression()
-lr.fit(X, y, learning_rate = best_rate, random_state = 0, weight_low = best_wl, weight_high = best_wh, nsteps=best_steps)
+lr.fit(X, y, learning_rate = 0.999, random_state = 0, weight_low = -300, weight_high = 300, nsteps=3000)
 xx = [i for i in range(X.shape[0])]
 y1 = lr.predict(X)
 print('MSE1 (My LR model):', best_error)
