@@ -31,10 +31,16 @@ class Visualizer(object):
 
     @staticmethod
     def __draw_function(ax, weights, marker_size=8):
-        X = np.linspace(1, 4000, 20)
-        Y = np.linspace(1, 6, 20)
-        Z = X * weights[0] + Y * weights[1]
+        n = 50
 
-        print(Z)
+        X = np.linspace(1, 4000, n)
+        Y = np.linspace(1, 6, n)
+        X, Y = np.meshgrid(X, Y)
 
-        ax.plot(X, Y, Z, c='red')
+        Z = np.zeros((n, n))
+        for i in range(n):
+            for j in range(n):
+                Z[i, j] = X[i, j] * weights[0] + Y[i, j] * weights[1]
+
+        # Plot the surface.
+        ax.plot_wireframe(X, Y, Z, color='red')
