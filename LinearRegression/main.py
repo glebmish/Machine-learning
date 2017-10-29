@@ -13,4 +13,4 @@ if __name__ == '__main__':
     print(regression.predict(flats[0]))
 
     vis = Visualizer()
-    vis.visualize(flats, func)
+    vis.visualize(flats, regression.W)

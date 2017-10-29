@@ -1,6 +1,6 @@
 
 def stupid_fit(X, y):
-    return [1 for x in X]
+    return (100, 200)
 
 
 class LinRegression(object):
