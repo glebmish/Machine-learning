@@ -115,11 +115,11 @@ best_steps = 0
 best_error = 1.0e+30
 
 """ Just example of calculations """
-for rate in np.linspace(0.9, 0.999, 100, dtype=float):
-    for weight_low in range(-1000, -500):
-        for weight_high in range(500, 1000):
+for rate in np.linspace(0.99, 0.999, 10, dtype=float):
+    for weight_low in np.linspace(-1000, -500, 250, dtype=int):
+        for weight_high in np.linspace(500, 1000, 250, dtype=int):
             print("rate:", rate, "; weight_low:", weight_low, "; weight_high:", weight_high)
-            for steps in range(1000, 3000):
+            for steps in range(2500, 3500):
                 lr = LinRegression()
                 lr.fit(X, y, learning_rate=rate, random_state=0, weight_low=weight_low, weight_high=weight_high, nsteps=steps)
                 xx = [i for i in range(X.shape[0])]
@@ -136,10 +136,10 @@ for rate in np.linspace(0.9, 0.999, 100, dtype=float):
 X = np.hstack((rooms, areas))
 y = np.array(prices)
 lr = LinRegression()
-lr.fit(X, y, learning_rate = 0.9, random_state = 0, weight_low = -900, weight_high = 900, nsteps=3000)
+lr.fit(X, y, learning_rate = best_rate, random_state = 0, weight_low = best_wl, weight_high = best_wh, nsteps=best_steps)
 xx = [i for i in range(X.shape[0])]
 y1 = lr.predict(X)
-print('MSE1 (My LR model):', mean_squared_error(y, y1))
+print('MSE1 (My LR model):', best_error)
 f=0
 t=40
 plt.plot(xx[f:t], y[f:t], color='r', linewidth=4, label='y')
