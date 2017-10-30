@@ -13,7 +13,6 @@
 
 
 import numpy as np
-
 from LinearRegression.methods.base import Base
 
 

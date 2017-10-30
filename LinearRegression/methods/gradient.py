@@ -1,5 +1,11 @@
+"""
+    На каждом шаге, зная W, можем посчитать разницу.
+    Y_predicted = WX
+    Delta = Y - Y_predicted
+    New W = W + alpha * Delta*X ( = derivative)
+    alpha - шаг спуска
+"""
 import numpy as np
-
 from LinearRegression.methods.base import Base
 
 
@@ -10,12 +16,13 @@ class Gradient(Base):
 
     def fit(self, data_X, data_Y, alpha=1.0e-2, steps=2000, normalize=True):
         X = np.zeros(data_X.shape)
+        X = np.hstack((np.ones([X.shape[0], 1]), X))
 
         self.normalize = normalize
 
         if self.normalize:
-            X[:, 0] = data_X[:, 0] / np.max(data_X[:, 0])
-            X[:, 1] = data_X[:, 1] / np.max(data_X[:, 1])
+            X[:, 1] = data_X[:, 0] / np.max(data_X[:, 0])
+            X[:, 2] = data_X[:, 1] / np.max(data_X[:, 1])
             Y = data_Y / np.max(data_Y)
             self.y_max = np.max(data_Y)
         else:
@@ -24,10 +31,13 @@ class Gradient(Base):
 
         W = np.array([0, 0, 0], dtype=float)
         for step in range(steps):
-            Y_predited = W[0] + W[1] * X[:, 0] + W[2] * X[:, 1]
+            # Y_predited = W[0] * X[:, 0] + W[1] * X[:, 1] + W[2] * X[:, 2]
+            # delta = Y - Y_predicted
+            # for i in range(X.shape[0]):
+            #    W = W + alpha * np.array([delta[i]*X[i, 0], delta[i] * X[i, 1], delta[i] * X[i, 2]])
+            Y_predited = np.dot(X, W)
             delta = Y - Y_predited
-            for i in range(X.shape[0]):
-                W = W + alpha * np.array([delta[i], delta[i] * X[i, 0], delta[i] * X[i, 1]])
+            W = W + alpha * np.dot(delta, X)
         self.W = W
 
 
