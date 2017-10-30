@@ -15,8 +15,7 @@ class Gradient(Base):
         super().__init__()
 
     def fit(self, data_X, data_Y, alpha=1.0e-2, steps=2000, normalize=True):
-        X = np.zeros(data_X.shape)
-        X = np.hstack((np.ones([X.shape[0], 1]), X))
+        X = np.ones([data_X.shape[0], data_X.shape[1] + 1])
 
         self.normalize = normalize
 

@@ -12,13 +12,13 @@ class Base(object):
         return None
 
     def predict(self, data_X):
-        X = np.zeros(data_X.shape)
+        X = np.ones([data_X.shape[0], data_X.shape[1] + 1])
         if self.normalize:
-            X[:, 0] = data_X[:, 0] / np.max(data_X[:, 0])
-            X[:, 1] = data_X[:, 1] / np.max(data_X[:, 1])
-            return (self.W[0] + self.W[1] * X[:, 0] + self.W[2] * X[:, 1]) * self.y_max
+            X[:, 1] = data_X[:, 0] / np.max(data_X[:, 0])
+            X[:, 2] = data_X[:, 1] / np.max(data_X[:, 1])
+            return np.dot(X, self.W) * self.y_max
         else:
-            return self.W[0] + self.W[1] * data_X[:, 0] + self.W[2] * data_X[:, 1]
+            return np.dot(X, self.W)
 
     @staticmethod
     def mean_deviation(real, predicted):
