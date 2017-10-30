@@ -1,5 +1,7 @@
 import numpy as np
 
+from LinearRegression.algorithms.utils import *
+
 
 class Gradient(object):
 
@@ -26,7 +28,7 @@ class Gradient(object):
                               size=(n, 1))
 
         y_pred = np.dot(X, W)
-        error0 = self.error(y, y_pred)
+        error0 = error(y, y_pred)
 
         y = y.reshape(m, 1)
         steps = 0
@@ -38,7 +40,7 @@ class Gradient(object):
             W = self.gradient_descent_step(W, dy, m, n, X)
             y_pred = np.dot(X, W)
 
-            error1 = self.error(y, y_pred)
+            error1 = error(y, y_pred)
             steps += 1
 
             if error1 > error0:
@@ -48,11 +50,6 @@ class Gradient(object):
                 return W
 
             error0 = error1
-
-    @staticmethod
-    def error(y_real, y_pred):
-        # mean squared error
-        return np.sum((y_pred - y_real) ** 2) / len(y_real)
 
     def gradient_descent_step(self, W, dy, m, n, X):
         s = (np.dot(dy.T, X)).reshape(n, 1)
