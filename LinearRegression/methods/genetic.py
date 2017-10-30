@@ -13,10 +13,11 @@
 
 
 import numpy as np
-from LinearRegression.algorithms.BaseAlgorithm import BaseAlgorithm
+
+from LinearRegression.methods.base import Base
 
 
-class GeneticPredictor(BaseAlgorithm):
+class Genetic(Base):
 
     def __init__(self):
         super().__init__()
@@ -68,7 +69,7 @@ class GeneticPredictor(BaseAlgorithm):
 if __name__ == "__main__":
     data = np.loadtxt("../prices.txt", skiprows=1, delimiter=',').astype(int)
     X, Y = data[..., 0:2], data[..., 2]
-    regression = GeneticPredictor()
+    regression = Genetic()
     regression.fit(X, Y)
     Y_predicted = regression.predict(X)
     print(regression.mean_deviation(Y, Y_predicted))

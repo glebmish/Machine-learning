@@ -1,7 +1,7 @@
 import numpy as np
 
 
-class BaseAlgorithm(object):
+class Base(object):
 
     def __init__(self):
         self.W = None

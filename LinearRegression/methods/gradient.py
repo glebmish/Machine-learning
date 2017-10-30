@@ -1,8 +1,9 @@
 import numpy as np
-from LinearRegression.algorithms.BaseAlgorithm import BaseAlgorithm
+
+from LinearRegression.methods.base import Base
 
 
-class GradientPredictor(BaseAlgorithm):
+class Gradient(Base):
 
     def __init__(self):
         super().__init__()
@@ -33,7 +34,7 @@ class GradientPredictor(BaseAlgorithm):
 if __name__ == "__main__":
     data = np.loadtxt("../prices.txt", skiprows=1, delimiter=',').astype(int)
     X, Y = data[..., 0:2], data[..., 2]
-    regression = GradientPredictor()
+    regression = Gradient()
     regression.fit(X, Y)
     Y_predicted = regression.predict(X)
     print(regression.mean_deviation(Y, Y_predicted))
