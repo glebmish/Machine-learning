@@ -1,6 +1,6 @@
 class Flat(object):
 
-    def __init__(self, area, rooms, price):
+    def __init__(self, area, rooms, price=0):
         self.area = area
         self.rooms = rooms
         self.price = price
