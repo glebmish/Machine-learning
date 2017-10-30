@@ -28,6 +28,7 @@ class Genetic(Base):
         if self.normalize:
             X[:, 1] = data_X[:, 0] / np.max(data_X[:, 0])
             X[:, 2] = data_X[:, 1] / np.max(data_X[:, 1])
+            self.x_max = np.array([np.max(data_X[:, 0]), np.max(data_X[:, 1])])
             self.y_max = np.max(data_Y)
         else:
             X = data_X
@@ -61,6 +62,7 @@ class Genetic(Base):
                     if new_error < best_error:
                         best_error = new_error
                         self.W = a_new
+        return self.W
 
 
 if __name__ == "__main__":
@@ -70,3 +72,8 @@ if __name__ == "__main__":
     regression.fit(X, Y)
     Y_predicted = regression.predict(X)
     print(regression.mean_deviation(Y, Y_predicted))
+
+    while True:
+        area = input("Area: ")
+        rooms = input("Rooms: ")
+        print(regression.predict_single(np.array([int(area), int(rooms)])))
