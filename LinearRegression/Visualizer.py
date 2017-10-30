@@ -5,12 +5,12 @@ import numpy as np
 
 class Visualizer(object):
 
-    def visualize(self, train_set, weights):
+    def visualize(self, train_set, regression):
         fig = plt.figure()
         ax = fig.gca(projection='3d')
 
         self.__draw_points(ax, train_set, 'o')
-        self.__draw_function(ax, weights)
+        self.__draw_surface(ax, regression.W)
 
         plt.legend(loc='lower center', bbox_to_anchor=(0.5, -0.3), ncol=3)
         plt.tight_layout(pad=5)
@@ -19,7 +19,18 @@ class Visualizer(object):
         ax.set_ylabel('Rooms')
         ax.set_zlabel('Price')
 
-        plt.show()
+        plt.show(block=False)
+
+        plt.figure()
+
+        self.__draw_function(np.array([flat.price for flat in train_set]), regression.predict(train_set))
+
+        plt.ylabel('Target label')
+        plt.xlabel('Line number in dataset')
+        plt.legend(loc=4)
+        plt.show(False)
+
+
 
     @classmethod
     def __draw_points(cls, ax, point_set, point_type, marker_size=8):
@@ -30,7 +41,7 @@ class Visualizer(object):
         ax.scatter(X, Y, Z, c='blue', marker=point_type)
 
     @staticmethod
-    def __draw_function(ax, weights, marker_size=8):
+    def __draw_surface(ax, weights, marker_size=8):
         n = 50
 
         X = np.linspace(1, 4000, n)
@@ -44,3 +55,8 @@ class Visualizer(object):
 
         # Plot the surface.
         ax.plot_wireframe(X, Y, Z, color='red')
+
+    @staticmethod
+    def __draw_function(y_real, y_pred):
+        plt.plot(list(range(np.size(y_real))), y_real, color='r', linewidth=4, label='given price')
+        plt.plot(list(range(np.size(y_pred))), y_pred, color='b', linewidth=2, label='predicted price')

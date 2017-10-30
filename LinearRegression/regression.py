@@ -13,8 +13,8 @@ class LinRegression(object):
 
         self.W = self.__fit(X, y)
 
-    def predict(self, flat):
-        X = np.array([flat.area, flat.rooms])
+    def predict(self, test_set):
+        X = np.array([[1, flat.area, flat.rooms] for flat in test_set])
         y = np.dot(X, self.W)
 
-        return y
+        return np.ndarray.flatten(y)

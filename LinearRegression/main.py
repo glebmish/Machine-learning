@@ -12,4 +12,6 @@ if __name__ == '__main__':
     regression.fit(flats)
 
     vis = Visualizer()
-    vis.visualize(flats, regression.W)
+    vis.visualize(flats, regression)
+
+    input('Press Enter to exit...')
