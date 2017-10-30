@@ -37,7 +37,6 @@ class LinRegression:
             weight_low=0,
             weight_high=1,
             fscaling=False,
-            kweigths=1,
             random_state=0
             ):
         # train our Linear Regression model
@@ -99,6 +98,13 @@ class LinRegression:
                 ),
                 self.W)
 
+
+def mean_error(y1, y2):
+    Y1 = np.array(y1)
+    Y2 = np.array(y2)
+    return np.sqrt(np.sum((Y1 - Y2) ** 2) / (len(Y1)))
+
+
 from LinearRegression.reader import read_training_set
 from sklearn.metrics import mean_squared_error
 
@@ -114,40 +120,52 @@ y = np.array(prices)
 best_rate = 0
 best_wl = 0
 best_wh = 0
-best_steps = 0
 best_error = 1.0e+30
+"""
+for rate in np.linspace(0.996, 1, 5, dtype=float):
+    for weight_low in np.linspace(-400, -600, 200, dtype=int):
+        if weight_low % 40 == 0: print(rate, weight_low)
+        for weight_high in np.linspace(400, 600, 200, dtype=int):
+            lr = LinRegression()
+            lr.fit(X, y, learning_rate=0.997, random_state=0, weight_low=weight_low, weight_high=weight_high, nsteps=3000)
+            xx = [i for i in range(X.shape[0])]
+            y1 = lr.predict(X)
+            error = mean_squared_error(y, y1)
+            if error < best_error:
+                best_rate = rate
+                best_wl = weight_low
+                best_wh = weight_high
+                best_error = error
+"""
 
-""" Just example of calculations """
-"""
-for rate in np.linspace(0.99, 0.999, 10, dtype=float):
-    for weight_low in np.linspace(-1000, -500, 250, dtype=int):
-        for weight_high in np.linspace(500, 1000, 250, dtype=int):
-            print("rate:", rate, "; weight_low:", weight_low, "; weight_high:", weight_high)
-            for steps in range(2500, 3500):
-                lr = LinRegression()
-                lr.fit(X, y, learning_rate=rate, random_state=0, weight_low=weight_low, weight_high=weight_high, nsteps=steps)
-                xx = [i for i in range(X.shape[0])]
-                y1 = lr.predict(X)
-                error = mean_squared_error(y, y1)
-                if error < best_error:
-                    best_rate = rate
-                    best_wl = weight_low
-                    best_wh = weight_high
-                    best_steps = steps
-                    best_error = error
-"""
+from sklearn.linear_model import LinearRegression
+
+print(best_rate, best_wl, best_wh)
 
 X = np.hstack((rooms, areas))
 y = np.array(prices)
-lr = LinRegression()
-lr.fit(X, y, learning_rate = 0.999, random_state = 0, weight_low = -300, weight_high = 300, nsteps=3000)
+lr1 = LinRegression()
+
+lr2 = LinearRegression()
+lr2.fit(X,y)
+
+# 0.996 -464 400
+lr1.fit(X, y, learning_rate=0.996, random_state=0, weight_low=-464, weight_high=400, nsteps=3000, fscaling=False)
+# lr.fit(X, y, learning_rate=best_rate, random_state=0, weight_low=best_wl, weight_high=best_wh, nsteps=3000, fscaling=False)
+
 xx = [i for i in range(X.shape[0])]
-y1 = lr.predict(X)
-print('MSE1 (My LR model):', best_error)
-f=0
-t=40
+y1 = lr1.predict(X)
+y2 = lr2.predict(X)
+print('MSE1 (My LR model):', mean_squared_error(y, y1))
+print('Error (My LR model):', mean_error(y, y1))
+print('MSE1 (My LR model):', mean_squared_error(y, y2))
+print('Error (My LR model):', mean_error(y, y2))
+
+f = 0
+t = len(y)
 plt.plot(xx[f:t], y[f:t], color='r', linewidth=4, label='y')
-plt.plot(xx[f:t], y1[f:t], color='b', linewidth=2, label='predicted y')
+plt.plot(xx[f:t], y1[f:t], color='b', linewidth=2, label='predicted')
+plt.plot(xx[f:t], y2[f:t], color='g', linewidth=2, label='predicted y by sklearn')
 plt.ylabel('Target label')
 plt.xlabel('Line number in dataset')
 plt.legend(loc=4)
