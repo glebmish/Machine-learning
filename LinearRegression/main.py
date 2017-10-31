@@ -2,17 +2,21 @@ from LinearRegression.reader import read_training_set
 from LinearRegression.Visualizer import Visualizer
 from LinearRegression.regression import LinRegression
 from LinearRegression.methods import gradient, genetic
+import LinearRegression.algorithms.genetic as genetic1
 from LinearRegression.Flat import Flat
 
 import numpy as np
 
+# точное решение линейной регрессии, псевдообратная матрица, метод наименьших квадратов
 if __name__ == '__main__':
     flats = read_training_set()
 
     gradient = gradient.Gradient()
     genetic = genetic.Genetic()
 
-    regression = LinRegression(regression_method=genetic)
+    genetic1 = genetic1.Genetic(nsteps=1500, mutation_rate=0.70)
+
+    regression = LinRegression(regression_method=genetic1)
     regression.fit(flats)
 
     y_real = np.array([flat.price for flat in flats])

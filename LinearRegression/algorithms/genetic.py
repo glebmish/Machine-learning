@@ -1,14 +1,15 @@
-from LinearRegression.algorithms.utils import *
+from LinearRegression.methods.base import Base
 
 import numpy as np
 
 
-class Genetic(object):
+class Genetic(Base):
 
     def __init__(self, population_size=100,
                  nsteps=300, e=0.0000000001,
                  weight_low=-500, weight_high=500, random_seed=1,
                  mutation_rate=0.015, tournament_size=5):
+        super().__init__()
         self.population_size = population_size
         self.nsteps = nsteps
         self.e = e
@@ -33,20 +34,23 @@ class Genetic(object):
         fittest = self.fittest(population)
 
         while generations < self.nsteps or fittest[1] < self.e:
+            if generations % 100 == 0:
+                print(generations)
             generations += 1
             population = self.evolve(population)
             fittest = self.fittest(population)
 
-        return fittest[0]
+        self.W = fittest[0]
+        return self.W
 
     def init_population(self):
         return np.random.randint(low=self.weight_low, high=self.weight_high, size=(self.population_size, 3))
 
     def fittest(self, population):
-        fittest = population[0], error(self.y, np.dot(self.X, population[0]))
+        fittest = population[0], self.mean_deviation(self.y, np.dot(self.X, population[0]))
 
         for each in population[1:]:
-            error1 = error(self.y, np.dot(self.X, each))
+            error1 = self.mean_deviation(self.y, np.dot(self.X, each))
             if error1 < fittest[1]:
                 fittest = each, error1
 
