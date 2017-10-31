@@ -42,7 +42,7 @@ class Visualizer(object):
     def __draw_surface(ax, regression, marker_size=8):
         n = 50
 
-        X = np.linspace(1, 4000, n)
+        X = np.linspace(1, 5000, n)
         Y = np.linspace(1, 6, n)
         X, Y = np.meshgrid(X, Y)
 
@@ -50,9 +50,6 @@ class Visualizer(object):
         for i in range(n):
             for j in range(n):
                 Z[i, j] = regression.predict_single(np.array([X[i, j], Y[i, j]]))
-                continue
-
-        print(Z)
 
         # Plot the surface.
         ax.plot_wireframe(X, Y, Z, color='red')
