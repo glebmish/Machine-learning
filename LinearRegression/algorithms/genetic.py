@@ -88,7 +88,7 @@ class Genetic(Base):
         to_mutate = np.random.uniform(0, 1)
         if to_mutate < self.mutation_rate:
             mutated_gene = np.random.randint(0, 3, size=1)[0]
-            new_value = np.random.randint(self.weight_low, self.weight_high, size=1)
-            ind[mutated_gene] = new_value
+            mutated_bit = np.random.randint(0, ind.itemsize, 1)
+            ind[mutated_gene] = np.bitwise_xor(ind[mutated_gene], np.left_shift(1, mutated_bit))
 
         return ind

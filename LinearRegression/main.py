@@ -2,7 +2,7 @@ from LinearRegression.reader import read_training_set
 from LinearRegression.Visualizer import Visualizer
 from LinearRegression.regression import LinRegression
 from LinearRegression.methods import gradient, genetic
-import LinearRegression.algorithms.genetic as genetic1
+import LinearRegression.algorithms.genetic as another_genetic
 from LinearRegression.Flat import Flat
 
 import numpy as np
@@ -14,9 +14,9 @@ if __name__ == '__main__':
     gradient = gradient.Gradient()
     genetic = genetic.Genetic()
 
-    genetic1 = genetic1.Genetic(nsteps=1500, mutation_rate=0.70)
+    another_genetic = another_genetic.Genetic(nsteps=2000, mutation_rate=0.85, tournament_size=10, weight_low=-10000, weight_high=30000)
 
-    regression = LinRegression(regression_method=genetic1)
+    regression = LinRegression(regression_method=another_genetic)
     regression.fit(flats)
 
     y_real = np.array([flat.price for flat in flats])
