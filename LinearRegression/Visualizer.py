@@ -10,7 +10,7 @@ class Visualizer(object):
         ax = fig.gca(projection='3d')
 
         self.__draw_points(ax, train_set, 'o')
-        self.__draw_surface(ax, regression.W)
+        self.__draw_surface(ax, regression)
 
         plt.legend(loc='lower center', bbox_to_anchor=(0.5, -0.3), ncol=3)
         plt.tight_layout(pad=5)
@@ -30,8 +30,6 @@ class Visualizer(object):
         plt.legend(loc=4)
         plt.show()
 
-
-
     @classmethod
     def __draw_points(cls, ax, point_set, point_type, marker_size=8):
         X = [x.area for x in point_set]
@@ -41,7 +39,7 @@ class Visualizer(object):
         ax.scatter(X, Y, Z, c='blue', marker=point_type)
 
     @staticmethod
-    def __draw_surface(ax, weights, marker_size=8):
+    def __draw_surface(ax, regression, marker_size=8):
         n = 50
 
         X = np.linspace(1, 4000, n)
@@ -51,7 +49,10 @@ class Visualizer(object):
         Z = np.zeros((n, n))
         for i in range(n):
             for j in range(n):
-                Z[i, j] = X[i, j] * weights[0] + Y[i, j] * weights[1]
+                Z[i, j] = regression.predict_single(np.array([X[i, j], Y[i, j]]))
+                continue
+
+        print(Z)
 
         # Plot the surface.
         ax.plot_wireframe(X, Y, Z, color='red')

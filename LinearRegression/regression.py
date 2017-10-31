@@ -18,5 +18,8 @@ class LinRegression(object):
 
         return self.__regression.predict(X)
 
+    def predict_single(self, x):
+        return self.__regression.predict_single(x)
+
     def mean_deviation(self, y_real, y_pred):
         return self.__regression.mean_deviation(y_real, y_pred)
