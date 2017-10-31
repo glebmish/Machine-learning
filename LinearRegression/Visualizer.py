@@ -19,7 +19,7 @@ class Visualizer(object):
         ax.set_ylabel('Rooms')
         ax.set_zlabel('Price')
 
-        plt.show(block=False)
+        plt.show()
 
         plt.figure()
 
@@ -28,7 +28,7 @@ class Visualizer(object):
         plt.ylabel('Target label')
         plt.xlabel('Line number in dataset')
         plt.legend(loc=4)
-        plt.show(False)
+        plt.show()
 
 
 

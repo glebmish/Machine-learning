@@ -9,7 +9,7 @@ class Base(object):
         self.x_max = None
         self.normalize = None
 
-    def fit(self):
+    def fit(self, data_X, data_Y):
         return None
 
     def predict(self, data_X):

@@ -18,12 +18,16 @@ from LinearRegression.methods.base import Base
 
 class Genetic(Base):
 
-    def __init__(self):
+    def __init__(self, n=100, m=50, steps=2000, normalize=True):
         super().__init__()
 
-    def fit(self, data_X, data_Y, n=100, m=50, steps=2000, normalize=True):
-        X = np.ones([data_X.shape[0], data_X.shape[1] + 1])
+        self.n = n
+        self.m = m
+        self.steps = steps
         self.normalize = normalize
+
+    def fit(self, data_X, data_Y):
+        X = np.ones([data_X.shape[0], data_X.shape[1] + 1])
 
         if self.normalize:
             X[:, 1] = data_X[:, 0] / np.max(data_X[:, 0])
@@ -35,17 +39,17 @@ class Genetic(Base):
 
         best_error = 10000000000
 
-        np.random.seed(n * m)
-        populations = np.random.rand(n, m, 3)
-        for step in range(steps):
+        np.random.seed(self.n * self.m)
+        populations = np.random.rand(self.n, self.m, 3)
+        for step in range(self.steps):
             if step % 1000 == 0: print(step)
-            population = populations[np.random.randint(0, n)]
-            for index in range(m):
+            population = populations[np.random.randint(0, self.n)]
+            for index in range(self.m):
                 a = population[index]
                 k = np.random.rand() / 2 + 0.5
-                b = population[np.random.randint(0, m)]
-                c = population[np.random.randint(0, m)]
-                d = population[np.random.randint(0, m)]
+                b = population[np.random.randint(0, self.m)]
+                c = population[np.random.randint(0, self.m)]
+                d = population[np.random.randint(0, self.m)]
                 a_new = b + k * (c - d)
 
                 if self.normalize:

@@ -11,13 +11,14 @@ from LinearRegression.methods.base import Base
 
 class Gradient(Base):
 
-    def __init__(self):
+    def __init__(self, alpha=1.0e-2, steps=2000, normalize=True):
         super().__init__()
-
-    def fit(self, data_X, data_Y, alpha=1.0e-2, steps=2000, normalize=True):
-        X = np.ones([data_X.shape[0], data_X.shape[1] + 1])
-
+        self.alpha = alpha
+        self.steps = steps
         self.normalize = normalize
+
+    def fit(self, data_X, data_Y):
+        X = np.ones([data_X.shape[0], data_X.shape[1] + 1])
 
         if self.normalize:
             X[:, 1] = data_X[:, 0] / np.max(data_X[:, 0])
@@ -30,14 +31,11 @@ class Gradient(Base):
             Y = data_Y
 
         W = np.array([0, 0, 0], dtype=float)
-        for step in range(steps):
-            # Y_predited = W[0] * X[:, 0] + W[1] * X[:, 1] + W[2] * X[:, 2]
-            # delta = Y - Y_predicted
-            # for i in range(X.shape[0]):
-            #    W = W + alpha * np.array([delta[i]*X[i, 0], delta[i] * X[i, 1], delta[i] * X[i, 2]])
+        for step in range(self.steps):
             Y_predited = np.dot(X, W)
             delta = Y - Y_predited
-            W = W + alpha * np.dot(delta, X)
+            W = W + self.alpha * np.dot(delta, X)
+
         self.W = W
         return self.W
 
