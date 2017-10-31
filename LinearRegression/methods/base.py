@@ -19,6 +19,8 @@ class Base(object):
             X[:, 2] = data_X[:, 1] / np.max(data_X[:, 1])
             return np.dot(X, self.W) * self.y_max
         else:
+            X[:, 1] = data_X[:, 0]
+            X[:, 2] = data_X[:, 1]
             return np.dot(X, self.W)
 
     def predict_single(self, x):
@@ -28,6 +30,8 @@ class Base(object):
             X[2] = x[1] / self.x_max[1]
             return np.dot(X, self.W) * self.y_max
         else:
+            X[1] = x[0]
+            X[2] = x[1]
             return np.dot(X, self.W)
 
     @staticmethod
