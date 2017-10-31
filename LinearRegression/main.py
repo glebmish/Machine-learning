@@ -12,10 +12,16 @@ if __name__ == '__main__':
     gradient = gradient.Gradient()
     genetic = genetic.Genetic()
 
-    regression = LinRegression(fit_method=genetic.fit)
+    regression = LinRegression(regression_method=genetic)
     regression.fit(flats)
 
+    y_real = np.array([flat.price for flat in flats])
+    y_pred = regression.predict(flats)
+    error = regression.mean_deviation(y_real, y_pred)
+
     print("Weights: {}".format(regression.W))
+    print("Error: {}".format(error))
+
     vis = Visualizer()
     vis.visualize(flats, regression)
 

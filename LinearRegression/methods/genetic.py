@@ -70,7 +70,7 @@ class Genetic(Base):
 
 
 if __name__ == "__main__":
-    data = np.loadtxt("../prices.txt", skiprows=1, delimiter=',').astype(int)
+    data = np.loadtxt("../prices.txt", skiprows=0, delimiter=',').astype(int)
     X, Y = data[..., 0:2], data[..., 2]
     regression = Genetic()
     regression.fit(X, Y)

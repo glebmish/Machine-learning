@@ -3,18 +3,20 @@ import numpy as np
 
 class LinRegression(object):
 
-    def __init__(self, fit_method):
+    def __init__(self, regression_method):
         self.W = None
-        self.__fit = fit_method
+        self.__regression = regression_method
 
     def fit(self, train_set):
         X = np.array([(x.area, x.rooms) for x in train_set])
         y = np.array([x.price for x in train_set])
 
-        self.W = self.__fit(X, y)
+        self.W = self.__regression.fit(X, y)
 
     def predict(self, test_set):
-        X = np.array([[1, flat.area, flat.rooms] for flat in test_set])
-        y = np.dot(X, self.W)
+        X = np.array([[flat.area, flat.rooms] for flat in test_set])
 
-        return np.ndarray.flatten(y)
+        return self.__regression.predict(X)
+
+    def mean_deviation(self, y_real, y_pred):
+        return self.__regression.mean_deviation(y_real, y_pred)
