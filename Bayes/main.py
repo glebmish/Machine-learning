@@ -9,7 +9,7 @@ if __name__ == "__main__":
     debug_print = False
     cross_validation = True
 
-    bayes = Bayes()
+    bayes = Bayes(include_subject=True, min_occurence=None)
 
     if cross_validation:
         f_measures = validate(bayes, documents_buckets, debug_print)
