@@ -1,4 +1,4 @@
-def validate(bayes_class, data, debug=False):
+def validate(bayes, data, debug=False):
     # cross validation for 10 buckets
 
     f_measures = []
@@ -10,7 +10,7 @@ def validate(bayes_class, data, debug=False):
         train_set = sum(train_set, [])
         test_set = data[9 - i]
 
-        bayes = bayes_class()
+        bayes.reset()
         bayes.train(train_set)
 
         f_measure = count_f(bayes, test_set, debug)
