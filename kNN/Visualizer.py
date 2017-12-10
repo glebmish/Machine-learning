@@ -20,7 +20,7 @@ class Visualizer(object):
         point_type_1 = 'b{}'.format(point_type)
         label_1 = '1 type {} set'.format(set_type)
 
-        pts_0 = [p for p in point_set if p.cls == 0]
+        pts_0 = [p for p in point_set if p.cls == 0 or p.cls == -1]
         x_0, y_0 = cls.__get_x_y(pts_0)
 
         point_type_0 = 'y{}'.format(point_type)
