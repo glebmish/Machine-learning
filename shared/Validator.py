@@ -1,4 +1,5 @@
 from collections import defaultdict
+import numpy as np
 
 
 def correct_percentage(X, y, clf):
@@ -7,7 +8,7 @@ def correct_percentage(X, y, clf):
 
 
 def f1_measure(X, y, clf):
-    guessed_label = [clf.predict(sample) for sample in X]
+    guessed_label = [clf.predict(np.array(sample).reshape(1, 2)) for sample in X]
 
     # -1, -1 - tn; -1, 1 - fp; 1, -1 - fn; 1, 1 - tp
     counts = defaultdict(lambda: defaultdict(lambda: 0))

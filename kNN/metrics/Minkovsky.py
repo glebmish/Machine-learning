@@ -8,11 +8,11 @@ class Minkovsky(MetricBase):
     def __init__(self, n):
         super().__init__(n)
 
-    def distance(self, point_a, point_b):
-        assert isinstance(point_a, Point)
-        assert isinstance(point_b, Point)
-        sum = math.pow(math.fabs((point_a.x - point_b.x)), self.n) \
-            + math.pow(math.fabs((point_a.y - point_b.y)), self.n)
+    def distance(self, x1, x2):
+        sum = 0
+        for each1, each2 in zip(x1, x2):
+            sum += math.pow(math.fabs((each1 - each2)), self.n)
+
         return math.pow(sum, 1/self.n)
 
     def __str__(self):
