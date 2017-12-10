@@ -10,5 +10,6 @@ if __name__ == "__main__":
     svm.train(X, y)
 
     print(vld.f1_measure(X, y, svm))
+    print(vld.confusion_matrix(X, y, svm))
 
     vis.plot(X, y, svm, 50)

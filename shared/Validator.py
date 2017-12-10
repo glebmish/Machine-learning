@@ -23,3 +23,23 @@ def f1_measure(X, y, clf):
 
     f1_measure = 2 * precision * recall / (precision + recall)
     return f1_measure
+
+
+def confusion_matrix(X, y, clf):
+    guessed_label = [clf.predict(np.array(sample).reshape(1, 2)) for sample in X]
+
+    # -1, -1 - tn; -1, 1 - fp; 1, -1 - fn; 1, 1 - tp
+    counts = defaultdict(lambda: defaultdict(lambda: 0))
+    for cc, gc in zip(y, guessed_label):
+        counts[cc][gc] += 1
+
+    matrix = [["p\r", "1", "-1"],
+              [  "1",  "",   ""],
+              [ "-1",  "",   ""]]
+
+    matrix[1][1] = counts[1][1]
+    matrix[1][2] = counts[1][-1]
+    matrix[2][1] = counts[-1][1]
+    matrix[2][2] = counts[-1][-1]
+
+    return np.array(matrix)
