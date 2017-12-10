@@ -1,6 +1,7 @@
 import SupportVector.SVM as SVM
-import SupportVector.reader as reader
 import numpy as np
+
+import shared.Reader as reader
 from kNN.Point import Point
 from kNN.Visualizer import Visualizer
 

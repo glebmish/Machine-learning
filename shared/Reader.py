@@ -2,11 +2,13 @@ from random import shuffle
 import numpy as np
 import os
 
+root = os.path.abspath(os.path.dirname(__file__))
+CHIPS_PATH = os.path.join(root, 'chips.txt')
 
 def read_training_set(shuf=True):
     objects = []
 
-    with open('chips.txt', 'r') as file:
+    with open(CHIPS_PATH, 'r') as file:
         for line in file:
             x, y, cls = line.split(',')
             x = float(x)
