@@ -1,20 +1,19 @@
 from random import shuffle
+
 from numpy import linspace
 
-from kNN.kernels import Triangular
-from kNN.kernels import Quartic
+from kNN.SimpleKNNClassifier import *
 from kNN.kernels import Epanechnikov
 from kNN.kernels import Gaussian
+from kNN.kernels import Quartic
 from kNN.kernels import Sigmoid
+from kNN.kernels import Triangular
 from kNN.metrics import Minkovsky
-from kNN.transformers import Linear
-from kNN.transformers import Tan
-from kNN.transformers import Rad
-
 from kNN.reader import *
-from kNN.SimpleKNNClassifier import *
-from kNN.Validator import Validator
-from kNN.Visualizer import Visualizer
+from kNN.transformers import Linear
+from kNN.transformers import Rad
+from kNN.transformers import Tan
+from shared.Validator import Validator
 
 MIN_K = 4
 MAX_K = 10
