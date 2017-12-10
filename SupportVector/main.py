@@ -1,8 +1,8 @@
 from svm import *
 from kernel import Kernel
-from reader import read_training_set
 import shared.Visualizer as vis
 import shared.Validator as vld
+import shared.Reader as reader
 
 if __name__ == "__main__":
     num_samples = 100
@@ -14,7 +14,7 @@ if __name__ == "__main__":
     # labels = 2 * (samples.sum(axis=1) > 0) - 1.0
     # svm = SVM(Kernel.linear(), 0.1)
 
-    X, y = read_training_set(shuf=True)
+    X, y = reader.read_training_set(shuf=True)
     svm = SVM(Kernel.gaussian(0.12), 0.1)
     svm.train(X, y)
 
