@@ -28,6 +28,6 @@ def read_training_set(shuf=True):
         Y.append(obj[2])
 
     X = np.array(X)
-    y = np.array(y)
+    Y = np.array(Y)
 
     return X, Y
