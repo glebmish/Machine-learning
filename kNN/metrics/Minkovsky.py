@@ -1,6 +1,5 @@
 import math
 
-from kNN.Point import Point
 from kNN.metrics.MetricBase import MetricBase
 
 

@@ -9,5 +9,6 @@ if __name__ == "__main__":
     knn.train(X, y)
 
     print(vld.f1_measure(X, y, knn))
+    print(vld.confusion_matrix(X, y, knn))
 
     vis.plot(X, y, knn, 50)
