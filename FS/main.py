@@ -1,13 +1,14 @@
 import os
 from numpy import genfromtxt
 import numpy as np
-from FS.spearman.spearman import *
+from FS.metrics.spearman import *
 from kNN.kNNClassifier import KNNClassifier
 from collections import defaultdict
+from FS.metrics.spearman import Spearman
+from FS.metrics.pears import Pears
 
 
-def main():
-    count_treshold = 0.0
+def main(metric):
 
     root = os.path.abspath(os.path.dirname(__file__))
     TRAIN_X_FILE = os.path.join(root, 'arcene_train.data')
@@ -20,7 +21,7 @@ def main():
     valid_X = genfromtxt(VALID_X_FILE, delimiter=' ')
     valid_Y = genfromtxt(VALID_Y_FILE, delimiter=' ')
 
-    indices = spearman(train_X, train_Y, count_treshold)
+    indices = metric.get_correlation_indices(train_X, train_Y)
 
     X = []
     for x in train_X:
@@ -40,18 +41,6 @@ def main():
 
     print("F: " + str(f1_measure(X, Y, classifier)))
 
-    """
-    count_good = 0
-    count_bad = 0
-    for i in range(len(X)):
-        if classifier.predict(X[i]) == Y[i]:
-            count_good += 1
-        else:
-            count_bad += 1
-    print("Good: " + str(count_good) + "\nBad: " + str(count_bad))
-    """
-
-
 
 def f1_measure(X, Y, clf):
     guessed_label = [clf.predict(sample) for sample in X]
@@ -70,6 +59,7 @@ def f1_measure(X, Y, clf):
     f1_measure = 2 * precision * recall / (precision + recall)
     return f1_measure
 
-
+# Spearman treshold: 0.01 - 0.03
+# Pears treshold:    0.1  - 0.3
 if __name__ == "__main__":
-    main()
+    main(Pears(0.3))
