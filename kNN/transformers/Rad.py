@@ -4,9 +4,9 @@ from kNN.transformers.TransformerBase import TransformerBase
 
 
 class Rad(TransformerBase):
-    def transform(self, points):
+    def transform(self, X):
         new_set = []
-        for point in points:
+        for x in X:
             new_set.append(Point((point.x ** 2 + point.y ** 2), math.atan2(point.x, point.y), point.cls))
         return new_set
 

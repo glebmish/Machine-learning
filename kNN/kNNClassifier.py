@@ -5,7 +5,7 @@ import numpy as np
 
 
 class KNNClassifier(object):
-    def __init__(self, k=8, kernel=Gaussian.Gaussian(), metric=Minkovsky.Minkovsky(2)):
+    def __init__(self, k=10, kernel=Gaussian.Gaussian(), metric=Minkovsky.Minkovsky(2)):
         self.__k = k
         self.__kernel = kernel
         self.__metric = metric
@@ -18,8 +18,8 @@ class KNNClassifier(object):
         self.__y = y
 
     def predict(self, x):
-        if len(x) != x.shape[0]:
-            x = x.reshape(len(x))
+        if len(x.shape) != 1:
+            x = x.reshape(x.shape[1])
 
         distances = []
         for sample in self.__X:
