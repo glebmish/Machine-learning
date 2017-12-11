@@ -1,11 +1,13 @@
-from random import shuffle
+from random import shuffle, seed
 import numpy as np
 import os
 
 root = os.path.abspath(os.path.dirname(__file__))
 CHIPS_PATH = os.path.join(root, 'chips.txt')
 
-def read_training_set(shuf=True):
+def read_training_set(shuf=True, rseed=20):
+    seed(rseed)
+
     objects = []
 
     with open(CHIPS_PATH, 'r') as file:
