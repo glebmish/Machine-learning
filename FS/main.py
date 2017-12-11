@@ -13,7 +13,13 @@ def main():
     train_X = genfromtxt(TRAIN_X_FILE, delimiter=' ')
     train_Y = genfromtxt(TRAIN_Y_FILE, delimiter=' ')
 
-    spearman(train_X, train_Y, count_treshold)
+    indices = spearman(train_X, train_Y, count_treshold)
+
+    X = []
+    for x in train_X:
+        X.append(np.take(x, indices))
+
+    X = np.array(X)
 
 
 if __name__ == "__main__":
