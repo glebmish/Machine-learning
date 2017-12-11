@@ -18,7 +18,8 @@ class KNNClassifier(object):
         self.__y = y
 
     def predict(self, x):
-        x = x.reshape(2)
+        if len(x) != x.shape[0]:
+            x = x.reshape(len(x))
 
         distances = []
         for sample in self.__X:
