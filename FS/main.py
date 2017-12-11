@@ -6,6 +6,7 @@ from kNN.kNNClassifier import KNNClassifier
 from collections import defaultdict
 from FS.metrics.spearman import Spearman
 from FS.metrics.pears import Pears
+from FS.metrics.ig import IG
 
 
 def main(metric):
@@ -61,5 +62,6 @@ def f1_measure(X, Y, clf):
 
 # Spearman treshold: 0.01 - 0.03
 # Pears treshold:    0.1  - 0.3
+# IG treshold:       100  - 200
 if __name__ == "__main__":
-    main(Pears(0.3))
+    main(IG(200))
