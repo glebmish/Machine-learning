@@ -4,8 +4,8 @@ from FS.metrics.base import Base
 
 class Spearman(Base):
 
-    def __init__(self, treshold):
-        super().__init__(treshold)
+    def __init__(self):
+        super().__init__()
 
     @staticmethod
     def get_ranked(x):
@@ -62,8 +62,8 @@ class Spearman(Base):
         return sum / (n * (n - 1) * (n + 1) - delta)
 
 
-    def get_correlation_indices(self, train_X, train_Y):
-        attribute_indices = []
+    def get_correlations(self, train_X, train_Y):
+        ps = []
 
         # firstly count for Y
         ranked_Y, indices_Y = Spearman.get_ranked(train_Y)
@@ -74,9 +74,15 @@ class Spearman(Base):
             relations_X = Spearman.get_relations(ranked_X)
             delta = Spearman.get_delta(relations_X, relations_Y)
             p = Spearman.spearman(ranked_X, indices_X, ranked_Y, indices_Y, delta)
-            if np.abs(p) > self.treshold:
-                attribute_indices.append(i)
+            ps.append(p)
 
-        print(str(len(attribute_indices)) + " attributes passed treshold")
+        return ps
 
-        return attribute_indices
+
+    @staticmethod
+    def lucky_tresholds():
+        return np.linspace(0.01, 0.03, 21)
+
+
+    def __str__(self):
+        return "Spearman"

@@ -4,8 +4,8 @@ from FS.metrics.base import Base
 
 class IG(Base):
 
-    def __init__(self, treshold):
-        super().__init__(treshold)
+    def __init__(self):
+        super().__init__()
 
     @staticmethod
     def ig(X, Y):
@@ -79,14 +79,21 @@ class IG(Base):
         return x_dict, x_dict_pos, x_dict_neg, y_dict
 
 
-    def get_correlation_indices(self, train_X, train_Y):
-        attribute_indices = []
+    def get_correlations(self, train_X, train_Y):
+        ps = []
 
         for i in range(train_X.shape[1]):
             p = IG.ig(train_X[:, i], train_Y)
-            if np.abs(p) > self.treshold:
-                attribute_indices.append(i)
+            ps.append(p)
 
-        print(str(len(attribute_indices)) + " attributes passed treshold")
+        return ps
 
-        return attribute_indices
+
+    @staticmethod
+    def lucky_tresholds():
+        return np.linspace(100, 200, 21)
+
+
+    def __str__(self):
+        return "IG"
+
